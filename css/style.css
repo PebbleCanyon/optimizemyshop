@@ -80,6 +80,7 @@ li {
     font-weight: bold;
     margin-top: 1rem;
     transition: background-color 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .cta-button:hover {
@@ -113,4 +114,166 @@ footer a:hover {
 
 a {
     color: #2ecc71;
+}
+
+/* Hero section styles */
+.hero-image {
+    background-image: url('images/hero-clean.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.hero-sub {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+/* Features section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 45%;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #2ecc71;
+    margin-bottom: 1rem;
+}
+
+/* Pricing section */
+.pricing {
+    background: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.pricing-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 45%;
+    text-align: center;
+}
+
+.pricing-card h3 {
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2ecc71;
+    margin: 1rem 0;
+}
+
+/* Trust section */
+.trust-section {
+    background: white;
+    padding: 3rem 0;
+}
+
+.trust-section h2 {
+    color: #1a1a2e;
+    margin-bottom: 2rem;
+}
+
+.trust-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.trust-icon {
+    font-size: 2rem;
+    color: #2ecc71;
+    margin-bottom: 1rem;
+}
+
+/* Dashboard image */
+.dashboard-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+
+/* Footer */
+.footer {
+    background: #1a1a2e;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin: 1.5rem 0;
+}
+
+.footer-links a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+    .feature-card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .pricing-table {
+        flex-direction: column;
+    }
+    .pricing-card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

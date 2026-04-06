@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .hero-image {
-            background-image: url('images/hero.png');
+            background-image: url('images/hero-clean.png');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -17,7 +17,7 @@
             text-align: center;
             color: white;
             padding: 0 20px;
-            background-color: rgba(0,0,0,0.2); /* Subtle darken for text readability */
+            background-color: rgba(0,0,0,0.1);
         }
         .hero-content {
             max-width: 800px;
@@ -25,7 +25,7 @@
         .hero-title {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         .hero-sub {
             font-size: 1.5rem;
@@ -101,26 +101,24 @@
             color: #1a1a2e;
             margin-bottom: 2rem;
         }
-        .trust-section .testimonial {
+        .trust-card {
             background: #f8f9fa;
             padding: 1.5rem;
             border-radius: 8px;
             margin: 1.5rem 0;
             position: relative;
         }
-        .trust-section .testimonial:before {
-            content: "“";
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 4rem;
-            color: #eee;
-            opacity: 0.1;
+        .trust-icon {
+            font-size: 2rem;
+            color: #2ecc71;
+            margin-bottom: 1rem;
         }
-        .trust-section .author {
-            font-style: italic;
-            margin-top: 0.5rem;
-            color: #666;
+        .dashboard-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 2rem 0;
         }
         .footer {
             background: #1a1a2e;
@@ -215,6 +213,7 @@
 
             <section class="dashboard">
                 <h2>See the Optimization Dashboard in Action</h2>
+                <img src="images/dashboard.png" alt="Optimization Dashboard" class="dashboard-image">
                 <div class="feature-card">
                     <div class="feature-icon">💻</div>
                     <h3>Real-Time Dashboard</h3>
@@ -240,7 +239,7 @@
                         <h3>11–20 Listings</h3>
                         <div class="price">$350</div>
                         <ul>
-                            <li>10 listing optimizations</li>
+                            <li>20 listing optimizations</li>
                             <li>Advanced SEO analysis</li>
                             <li>Priority support</li>
                             <li>Monthly report</li>
@@ -251,7 +250,7 @@
                         <h3>21–50 Listings</h3>
                         <div class="price">$500</div>
                         <ul>
-                            <li>10 listing optimizations</li>
+                            <li>50 listing optimizations</li>
                             <li>Advanced SEO analysis</li>
                             <li>Priority support</li>
                             <li>Monthly report</li>
@@ -303,6 +302,4 @@
         </div>
     </footer>
 </body>
-</html>```
-
-css\style.css
+</html>
